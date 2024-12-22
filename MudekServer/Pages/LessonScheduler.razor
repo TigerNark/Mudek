@@ -1,0 +1,28 @@
+@page "/lesson-scheduler"
+
+
+<h3>Ders Ekleme Sayfası</h3>
+
+<form>
+    <div>
+        <label for="lessonName">Ders Adı:</label>
+        <input type="text" id="lessonName" placeholder="Ders adı girin" />
+    </div>
+    <div>
+        <label for="lessonDate">Ders Tarihi:</label>
+        <input type="date" id="lessonDate" />
+    </div>
+    <div>
+        <button type="submit">Dersi Ekle</button>
+    </div>
+</form>
+@code {
+    private string lessonName;
+    private DateTime lessonDate;
+
+    private void OnSubmit()
+    {
+        // Burada ders ekleme işlemleri yapılabilir
+        Console.WriteLine($"Ders: {lessonName}, Tarih: {lessonDate}");
+    }
+}

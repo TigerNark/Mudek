@@ -1,0 +1,2288 @@
+{
+  "Version": 1,
+  "Hash": "3MsIOa0zV6AsDOy870+uqtd6Vz27lH2FWUtIDyn92c4=",
+  "Source": "MudekServer",
+  "BasePath": "_content/MudekServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MudekServer\\wwwroot",
+      "Source": "MudekServer",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "MudekServer#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "v2ys483jb9",
+      "Integrity": "hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "MudekServer#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "v2ys483jb9",
+      "Integrity": "hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\amasya-üni-logo.png",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "amasya-üni-logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqjai0s21z",
+      "Integrity": "dRT0VnhanYEOn2jgEKOSbo7SyKpE0oKrnC+ly/Mg08M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\amasya-üni-logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\exam-analysis.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/exam-analysis#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7qrycnvmkc",
+      "Integrity": "33gBzy/eNgYzx586CArnwXAG8m/vNxbswi3/KXbhmb8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\exam-analysis.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\Exam.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/Exam#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uv07jxvdd2",
+      "Integrity": "xrjjO70dEW20XFQI+qbmrQOpOipWz1fBU8CmYTCQlvA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Exam.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\Lesson.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/Lesson#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jvjljj0sg2",
+      "Integrity": "IYm4JnAyC422WUo5fGNPa87qcFStUNE7nIh3Re5bvRk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Lesson.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\LessonDetails.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/LessonDetails#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g1pgcp3emk",
+      "Integrity": "xCJ0PhFmGUg61Z8kXHSXH05rUivPb/ssOkLhhQXYAlg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LessonDetails.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\login.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/login#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dq7gl9qiye",
+      "Integrity": "JaSHuk7p6Oh+F21q9px0xjvYs1gvXypIlk61BIDoIr8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/FONT-LICENSE#[.{fingerprint}]?",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "48tmkg660f",
+      "Integrity": "jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cmapd0fi15",
+      "Integrity": "BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.eot",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0uw8dim9nl",
+      "Integrity": "OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wk8x8xm0ah",
+      "Integrity": "sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sjnzgf7e1h",
+      "Integrity": "+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ll5grcv8wv",
+      "Integrity": "p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h4d0pazwgy",
+      "Integrity": "cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/ICON-LICENSE#[.{fingerprint}]?",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4dwjve0o0b",
+      "Integrity": "aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/open-iconic/README#[.{fingerprint}]?.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5bzwdl5l6x",
+      "Integrity": "waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\site.css",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zh9s866nx2",
+      "Integrity": "Fx+c1youNLgejKLBM3S2fD6fcDOSv/D7tNQKm5gws6U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\favicon.png",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\icon-192.png",
+      "SourceId": "MudekServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\",
+      "BasePath": "_content/MudekServer",
+      "RelativePath": "icon-192#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f9uvjujlxy",
+      "Integrity": "DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icon-192.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "amasya-üni-logo.png",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\amasya-üni-logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226041"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRT0VnhanYEOn2jgEKOSbo7SyKpE0oKrnC+ly/Mg08M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Oct 2024 14:24:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRT0VnhanYEOn2jgEKOSbo7SyKpE0oKrnC+ly/Mg08M="
+        }
+      ]
+    },
+    {
+      "Route": "amasya-üni-logo.tqjai0s21z.png",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\amasya-üni-logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226041"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dRT0VnhanYEOn2jgEKOSbo7SyKpE0oKrnC+ly/Mg08M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Oct 2024 14:24:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqjai0s21z"
+        },
+        {
+          "Name": "label",
+          "Value": "amasya-üni-logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dRT0VnhanYEOn2jgEKOSbo7SyKpE0oKrnC+ly/Mg08M="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/exam-analysis.7qrycnvmkc.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\exam-analysis.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"33gBzy/eNgYzx586CArnwXAG8m/vNxbswi3/KXbhmb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 15:13:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7qrycnvmkc"
+        },
+        {
+          "Name": "label",
+          "Value": "css/exam-analysis.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-33gBzy/eNgYzx586CArnwXAG8m/vNxbswi3/KXbhmb8="
+        }
+      ]
+    },
+    {
+      "Route": "css/exam-analysis.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\exam-analysis.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"33gBzy/eNgYzx586CArnwXAG8m/vNxbswi3/KXbhmb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 15:13:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-33gBzy/eNgYzx586CArnwXAG8m/vNxbswi3/KXbhmb8="
+        }
+      ]
+    },
+    {
+      "Route": "css/Exam.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\Exam.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2020"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xrjjO70dEW20XFQI+qbmrQOpOipWz1fBU8CmYTCQlvA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 12:34:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xrjjO70dEW20XFQI+qbmrQOpOipWz1fBU8CmYTCQlvA="
+        }
+      ]
+    },
+    {
+      "Route": "css/Exam.uv07jxvdd2.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\Exam.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2020"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xrjjO70dEW20XFQI+qbmrQOpOipWz1fBU8CmYTCQlvA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 12:34:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uv07jxvdd2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Exam.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xrjjO70dEW20XFQI+qbmrQOpOipWz1fBU8CmYTCQlvA="
+        }
+      ]
+    },
+    {
+      "Route": "css/Lesson.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\Lesson.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IYm4JnAyC422WUo5fGNPa87qcFStUNE7nIh3Re5bvRk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Oct 2024 19:20:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IYm4JnAyC422WUo5fGNPa87qcFStUNE7nIh3Re5bvRk="
+        }
+      ]
+    },
+    {
+      "Route": "css/Lesson.jvjljj0sg2.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\Lesson.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IYm4JnAyC422WUo5fGNPa87qcFStUNE7nIh3Re5bvRk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Oct 2024 19:20:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jvjljj0sg2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Lesson.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IYm4JnAyC422WUo5fGNPa87qcFStUNE7nIh3Re5bvRk="
+        }
+      ]
+    },
+    {
+      "Route": "css/LessonDetails.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\LessonDetails.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCJ0PhFmGUg61Z8kXHSXH05rUivPb/ssOkLhhQXYAlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Oct 2024 07:39:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCJ0PhFmGUg61Z8kXHSXH05rUivPb/ssOkLhhQXYAlg="
+        }
+      ]
+    },
+    {
+      "Route": "css/LessonDetails.g1pgcp3emk.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\LessonDetails.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xCJ0PhFmGUg61Z8kXHSXH05rUivPb/ssOkLhhQXYAlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Oct 2024 07:39:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g1pgcp3emk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LessonDetails.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xCJ0PhFmGUg61Z8kXHSXH05rUivPb/ssOkLhhQXYAlg="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JaSHuk7p6Oh+F21q9px0xjvYs1gvXypIlk61BIDoIr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 00:22:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JaSHuk7p6Oh+F21q9px0xjvYs1gvXypIlk61BIDoIr8="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.dq7gl9qiye.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JaSHuk7p6Oh+F21q9px0xjvYs1gvXypIlk61BIDoIr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 00:22:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dq7gl9qiye"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JaSHuk7p6Oh+F21q9px0xjvYs1gvXypIlk61BIDoIr8="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/FONT-LICENSE",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/FONT-LICENSE.48tmkg660f",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "48tmkg660f"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/FONT-LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.cmapd0fi15.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cmapd0fi15"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.0uw8dim9nl.eot",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0uw8dim9nl"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.eot"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.eot",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.h4d0pazwgy.woff",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4d0pazwgy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.ll5grcv8wv.ttf",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ll5grcv8wv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.otf",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.sjnzgf7e1h.svg",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sjnzgf7e1h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.svg",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.ttf",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28028"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.wk8x8xm0ah.otf",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wk8x8xm0ah"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.otf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.woff",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/ICON-LICENSE",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/ICON-LICENSE.4dwjve0o0b",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4dwjve0o0b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/ICON-LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.5bzwdl5l6x.md",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5bzwdl5l6x"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/README.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.md",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-waukoLqsiIAw/nXpsKkTHnhImmcPijcBEd2lzqzJNN0="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fx+c1youNLgejKLBM3S2fD6fcDOSv/D7tNQKm5gws6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fx+c1youNLgejKLBM3S2fD6fcDOSv/D7tNQKm5gws6U="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.zh9s866nx2.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2978"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fx+c1youNLgejKLBM3S2fD6fcDOSv/D7tNQKm5gws6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zh9s866nx2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fx+c1youNLgejKLBM3S2fD6fcDOSv/D7tNQKm5gws6U="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "icon-192.f9uvjujlxy.png",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\icon-192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2626"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 29 Sep 2024 17:32:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f9uvjujlxy"
+        },
+        {
+          "Name": "label",
+          "Value": "icon-192.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4="
+        }
+      ]
+    },
+    {
+      "Route": "icon-192.png",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\wwwroot\\icon-192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2626"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 29 Sep 2024 17:32:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4="
+        }
+      ]
+    },
+    {
+      "Route": "MudekServer.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 01:53:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg="
+        }
+      ]
+    },
+    {
+      "Route": "MudekServer.styles.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 01:53:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg="
+        }
+      ]
+    },
+    {
+      "Route": "MudekServer.v2ys483jb9.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 01:53:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v2ys483jb9"
+        },
+        {
+          "Name": "label",
+          "Value": "MudekServer.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg="
+        }
+      ]
+    },
+    {
+      "Route": "MudekServer.v2ys483jb9.styles.css",
+      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Desktop\\son hali 22.12 03.20\\MudekServer\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 01:53:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v2ys483jb9"
+        },
+        {
+          "Name": "label",
+          "Value": "MudekServer.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg="
+        }
+      ]
+    }
+  ]
+}

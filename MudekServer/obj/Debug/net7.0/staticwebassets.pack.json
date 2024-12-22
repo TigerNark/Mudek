@@ -1,0 +1,105 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MudekServer.x5hzdecjmu.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\amasya-üni-logo.png",
+      "PackagePath": "staticwebassets\\amasya-üni-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\Exam.css",
+      "PackagePath": "staticwebassets\\css\\Exam.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\Lesson.css",
+      "PackagePath": "staticwebassets\\css\\Lesson.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\LessonDetails.css",
+      "PackagePath": "staticwebassets\\css\\LessonDetails.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\exam-analysis.css",
+      "PackagePath": "staticwebassets\\css\\exam-analysis.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\MSI\\Desktop\\MudekServer\\MudekServer\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MudekServer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MudekServer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MudekServer.props",
+      "PackagePath": "build\\MudekServer.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MudekServer.props",
+      "PackagePath": "buildMultiTargeting\\MudekServer.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MudekServer.props",
+      "PackagePath": "buildTransitive\\MudekServer.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

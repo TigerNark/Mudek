@@ -1,0 +1,421 @@
+@page "/lessons/{courseCode}"
+@using Microsoft.AspNetCore.WebUtilities
+@using Microsoft.EntityFrameworkCore
+@using MudekServer.Data
+@using MudekServer.Models
+@using MudekServer.Services
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject ApplicationDbContext _context
+@inject LoPoMatrixService _loPoMatrixService
+<head>
+    <link rel="stylesheet" href="css/LessonDetails.css">
+</head>
+<div class="lesson-details">
+    <h3>Ders Detayları</h3>
+
+    <p>Ders Kodu: @CourseCode</p>
+
+    <div class="learning-outcomes-section">
+        <button @onclick="ToggleLearningOutcomes" class="toggle-button">
+            Öğrenim Çıktıları
+            <span class="@(isLearningOutcomesOpen ? "chevron-up" : "chevron-down")"></span>
+        </button>
+
+        @if (isLearningOutcomesOpen)
+        {
+            <div class="learning-outcomes-content">
+                <h4>Öğrenim Çıktıları Ekle</h4>
+                <button @onclick="AddLearningOutcome" 
+                        class="add-outcome-button" 
+                        disabled="@isMaxOutcomesReached">
+                    Yeni Öğrenim Çıktısı Ekle
+                </button>
+                
+                @if (isMaxOutcomesReached)
+                {
+                    <div class="alert alert-danger">
+                        Maksimum 6 öğrenim çıktısı ekleyebilirsiniz.
+                    </div>
+                }
+
+                @foreach (var outcome in learningOutcomesList)
+                {
+                    <div class="input-group">
+                        <label>@(learningOutcomesList.IndexOf(outcome) + 1). Öğrenim Çıktısı:</label>
+                        <input @bind="outcome.Description" placeholder="Açıklama girin" />
+                    </div>
+                }
+
+                <button @onclick="SaveLearningOutcomes" class="save-button">Kaydet</button>
+            </div>
+        }
+    </div>
+
+    <h4>LO*PO Matrisi</h4>
+    <div class="lo-po-matrix">
+        <table>
+            <thead>
+                <tr>
+                    <th>Program Çıktıları</th>
+                    @for (int i = 1; i <= 11; i++)
+                    {
+                        <th>P@(i)</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @for (int j = 0; j < learningOutcomesList.Count; j++)
+                {
+                    <tr>
+                        <th>@learningOutcomesList[j].Description</th>
+                        @for (int i = 1; i <= 11; i++)
+                        {
+                            int rowIndex = j;
+                            int colIndex = i;
+                            var key = $"P{i}Ö{j+1}";
+                            <td>
+                                <input type="number" 
+                                       value="@(GetLoPoValue(key))"
+                                       @onchange="@(e => HandleValueChange(e, rowIndex, colIndex))"
+                                       min="0" 
+                                       max="5" />
+                            </td>
+                        }
+                    </tr>
+                }
+                <tr class="total-row">
+                    <th>Tüm Ortalamalar</th>
+                    @for (int i = 1; i <= 11; i++)
+                    {
+                        <td id="total-P@(i)">0</td>
+                    }
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button @onclick="SaveLoPOMatrix" class="save-button">Matrisi Kaydet</button>
+</div>
+
+@code {
+    [Parameter] public string CourseCode { get; set; }
+
+    private List<LearningOutcome> learningOutcomesList = new();
+    private Dictionary<string, int> loPoValues = new();
+    private Dictionary<int, HashSet<int>> outcomeConnections = new();
+    private bool isLearningOutcomesOpen = false;
+
+    private const int MaxOutcomes = 6;
+    private const int MaxValue = 5;
+    private const int MaxConnectionsPerOutcome = 4;
+
+    private bool isMaxOutcomesReached => learningOutcomesList.Count >= MaxOutcomes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try 
+        {
+            var lesson = await _context.Lessons
+                .Include(l => l.LearningOutcomes)
+                    .ThenInclude(lo => lo.LoPoRelations)
+                .FirstOrDefaultAsync(l => l.CourseCode == CourseCode);
+
+            if (lesson != null)
+            {
+                // Öğrenim çıktılarını yükle
+                learningOutcomesList = lesson.LearningOutcomes.ToList();
+
+                // LoPoRelation verilerini yükle
+                await LoadLoPoRelations();
+            }
+            
+            // Gerekli başlangıç ayarları
+            InitializeLoPoValues();
+        }
+        catch (Exception ex)
+        {
+            await HandleError("Veri yükleme hatası", ex);
+        }
+    }
+
+    private async Task LoadLoPoRelations()
+    {
+        loPoValues.Clear();
+        foreach (var outcome in learningOutcomesList)
+        {
+            var relations = await _context.LoPoRelations
+                .Where(r => r.LearningOutcomeId == outcome.Id)
+                .ToListAsync();
+
+            foreach (var relation in relations)
+            {
+                var outcomeIndex = learningOutcomesList.IndexOf(outcome) + 1;
+                var key = $"P{relation.ProgramOutcome}Ö{outcomeIndex}";
+                loPoValues[key] = relation.Score;
+            }
+        }
+    }
+
+    private void InitializeLoPoValues()
+    {
+        loPoValues ??= new Dictionary<string, int>();
+        outcomeConnections ??= new Dictionary<int, HashSet<int>>();
+
+        // Tüm olası kombinasyonları sıfırla
+        for (int i = 1; i <= 11; i++)
+        {
+            for (int j = 1; j <= MaxOutcomes; j++)
+            {
+                var key = $"P{i}Ö{j}";
+                if (!loPoValues.ContainsKey(key))
+                {
+                    loPoValues[key] = 0;
+                }
+            }
+        }
+
+        // Bağlantıları sıfırla
+        outcomeConnections.Clear();
+        for (int i = 0; i < MaxOutcomes; i++)
+        {
+            outcomeConnections[i] = new HashSet<int>();
+        }
+    }
+
+    private int GetLoPoValue(string key) => 
+        loPoValues.TryGetValue(key, out int value) ? value : 0;
+
+    private async Task HandleValueChange(ChangeEventArgs e, int rowIndex, int colIndex)
+    {
+        try
+        {
+            var newValue = int.TryParse(e.Value?.ToString(), out int value) 
+                ? Math.Min(value, MaxValue) 
+                : 0;
+
+            var key = $"P{colIndex}Ö{rowIndex + 1}";
+            var oldValue = GetLoPoValue(key);
+
+            // Bağlantı kontrolleri
+            if (!ValidateConnectionRules(rowIndex, colIndex, newValue, oldValue))
+                return;
+
+            // Değeri güncelle
+            loPoValues[key] = newValue;
+
+            // Toplam hesaplamayı tetikle
+            await CalculateTotal();
+        }
+        catch (Exception ex)
+        {
+            await HandleError("Değer değiştirme hatası", ex);
+        }
+    }
+
+    private bool ValidateConnectionRules(int rowIndex, int colIndex, int newValue, int oldValue)
+    {
+        if (!outcomeConnections.ContainsKey(rowIndex))
+            outcomeConnections[rowIndex] = new HashSet<int>();
+
+        // Yeni bağlantı ekleniyorsa
+        if (newValue > 0 && oldValue == 0)
+        {
+            if (outcomeConnections[rowIndex].Count >= MaxConnectionsPerOutcome)
+            {
+                JSRuntime.InvokeVoidAsync("alert", 
+                    $"Bir öğrenim çıktısı en fazla {MaxConnectionsPerOutcome} program çıktısı ile eşleşebilir.");
+                return false;
+            }
+
+            outcomeConnections[rowIndex].Add(colIndex);
+        }
+        // Bağlantı kaldırılıyorsa
+        else if (newValue == 0 && oldValue > 0)
+        {
+            outcomeConnections[rowIndex].Remove(colIndex);
+        }
+
+        return true;
+    }
+
+    private void AddLearningOutcome()
+    {
+        if (learningOutcomesList.Count < MaxOutcomes)
+        {
+            var newOutcome = new LearningOutcome
+            {
+                Description = $"Öğrenim çıktısı {learningOutcomesList.Count + 1} açıklaması",
+                CourseCode = CourseCode
+            };
+            
+            learningOutcomesList.Add(newOutcome);
+            InitializeLoPoValues(); // Yeni çıktı için değerleri sıfırla
+        }
+    }
+
+ private async Task SaveLearningOutcomes()
+{
+    try
+    {
+        // Veri tabanı işlemleri tamamlanmadan başka bir işlem başlatmayın
+        foreach (var outcome in learningOutcomesList)
+        {
+            if (outcome.Id == 0)
+                _context.LearningOutcomes.Add(outcome);
+            else
+                _context.LearningOutcomes.Update(outcome);
+        }
+
+        await _context.SaveChangesAsync();
+        await JSRuntime.InvokeVoidAsync("alert", "Öğrenim çıktıları başarıyla kaydedildi.");
+    }
+    catch (Exception ex)
+    {
+        await HandleError("Kaydetme hatası", ex);
+    }
+}
+
+    private async Task CalculateTotal()
+    {
+        try
+        {
+            var totals = new int[11];
+            for (int i = 1; i <= 11; i++)
+            {
+                int sum = 0;
+                int validOutcomes = 0;
+                
+                for (int j = 0; j < learningOutcomesList.Count; j++)
+                {
+                    var key = $"P{i}Ö{j+1}";
+                    if (loPoValues.ContainsKey(key) && loPoValues[key] > 0)
+                    {
+                        sum += loPoValues[key];
+                        validOutcomes++;
+                    }
+                }
+                
+                totals[i - 1] = validOutcomes > 0 
+                    ? (int)Math.Round((double)sum / validOutcomes, MidpointRounding.AwayFromZero)
+                    : 0;
+            }
+
+            if (JSRuntime != null)
+            {
+                await JSRuntime.InvokeVoidAsync("updateTotals", totals);
+            }
+        }
+        catch (Exception ex)
+        {
+            await HandleError("Toplam hesaplama hatası", ex);
+        }
+    }
+
+private async Task SaveLoPOMatrix()
+{
+    try
+    {
+        // Mevcut ilişkileri temizle
+        var existingRelations = await _context.LoPoRelations
+            .Include(r => r.LearningOutcome)
+            .Where(r => r.LearningOutcome.CourseCode == CourseCode)
+            .ToListAsync();
+        
+        _context.LoPoRelations.RemoveRange(existingRelations);
+
+        // Yeni ilişkileri ekle
+        for (int j = 0; j < learningOutcomesList.Count; j++)
+        {
+            for (int i = 1; i <= 11; i++)
+            {
+                var key = $"P{i}Ö{j+1}";
+                int score = GetLoPoValue(key);
+                
+                if (score > 0)
+                {
+                    var loPoRelation = new LoPoRelation
+                    {
+                        LearningOutcomeId = learningOutcomesList[j].Id,
+                        ProgramOutcome = i,
+                        Score = score
+                    };
+                    _context.LoPoRelations.Add(loPoRelation);
+                }
+            }
+        }
+
+        // Program Çıktıları Ortalamasını Kaydet
+        var lesson = await _context.Lessons
+            .Include(l => l.ProgramOutcomes)
+            .FirstOrDefaultAsync(l => l.CourseCode == CourseCode);
+
+        if (lesson != null)
+        {
+            // ProgramOutcomes var mı, yoksa yeni oluştur
+            if (lesson.ProgramOutcomes == null)
+            {
+                lesson.ProgramOutcomes = new ProgramOutcomes { LessonId = lesson.CourseCode };
+                _context.ProgramOutcomes.Add(lesson.ProgramOutcomes);
+            }
+
+            // Toplam hesaplamayı burada yap ve kaydet
+            var totals = new int[11];
+            for (int i = 1; i <= 11; i++)
+            {
+                int sum = 0;
+                int validOutcomes = 0;
+                
+                for (int j = 0; j < learningOutcomesList.Count; j++)
+                {
+                    var key = $"P{i}Ö{j+1}";
+                    if (loPoValues.ContainsKey(key) && loPoValues[key] > 0)
+                    {
+                        sum += loPoValues[key];
+                        validOutcomes++;
+                    }
+                }
+                
+                totals[i - 1] = validOutcomes > 0 
+                    ? (int)Math.Round((double)sum / validOutcomes, MidpointRounding.AwayFromZero)
+                    : 0;
+
+                // Dinamik olarak ProgramOutcomes'a set et
+                var property = typeof(ProgramOutcomes).GetProperty($"P{i}");
+                property?.SetValue(lesson.ProgramOutcomes, totals[i - 1]);
+            }
+
+            await _context.SaveChangesAsync();
+
+            // URL'ye program çıktısı ortalamalarını ekleyerek yönlendir
+            var queryParams = totals
+                .Select((value, index) => new { Key = $"P{index + 1}", Value = value })
+                .ToDictionary(x => x.Key, x => x.Value.ToString());
+
+            queryParams.Add("courseCode", CourseCode);
+
+            var url = QueryHelpers.AddQueryString("/lessons", queryParams);
+            NavigationManager.NavigateTo(url);
+        }
+
+        await _context.SaveChangesAsync();
+
+        // Verileri yeniden yükle
+        await OnInitializedAsync();
+
+        await JSRuntime.InvokeVoidAsync("alert", "Değerler başarıyla kaydedildi.");
+    }
+    catch (Exception ex)
+    {
+        await HandleError("Matris kaydetme hatası", ex);
+    }
+}
+
+    private void ToggleLearningOutcomes() => 
+        isLearningOutcomesOpen = !isLearningOutcomesOpen;
+
+    private async Task HandleError(string message, Exception ex)
+    {
+        Console.Error.WriteLine($"{message}: {ex.Message}");
+        await JSRuntime.InvokeVoidAsync("alert", $"{message}: {ex.Message}");
+    }
+}

@@ -1,0 +1,104 @@
+/* Tablo Geneli */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.table:hover {
+    transform: scale(1.01);
+}
+
+/* Başlık ve Hücreler */
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tablo Başlıkları */
+th {
+    background-color: #005a8e;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Satır Hover Etkisi */
+tr:hover td {
+    background-color: #e6f7ff;
+    color: #005a8e;
+}
+
+/* Alternatif Satır Renkleri */
+tbody tr:nth-child(odd) td {
+    background-color: #fafafa;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Hücrelerdeki Input Alanları */
+td input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+td input[type="number"]:focus {
+    border-color: #005a8e;
+    outline: none;
+}
+
+/* Sütunları ayıran border'lar */
+table th, table td {
+    border-left: 1px solid #ddd;
+}
+
+table th:first-child, table td:first-child {
+    border-left: none;
+}
+
+/* Checkbox stil */
+label input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+/* Butonlar için stil */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #005a8e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #00497a;
+}
+
+/* Yükleniyor Metni */
+p {
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+}

@@ -1,0 +1,86 @@
+@layout LoginLayout
+@page "/"
+@using MudekServer.Data
+@using MudekServer.Models
+@using Microsoft.EntityFrameworkCore
+@using System.ComponentModel.DataAnnotations
+@inject ApplicationDbContext dbContext
+@inject NavigationManager Navigation
+
+<link href="css/login.css" rel="stylesheet" />
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <img src="images/amasya-üni-logo.png" alt="Amasya Üniversitesi Logo" class="uni-logo">
+            <h1 class="login-title">MÜDEK Sistemi</h1>
+        </div>
+        <p class="login-subtitle">Kurumsal Giriş Paneli</p>
+
+        <EditForm Model="userModel" OnValidSubmit="HandleLogin">
+            <DataAnnotationsValidator />
+
+            <div class="form-group">
+                <label for="email">Kurumsal E-posta</label>
+                <InputText id="email" @bind-Value="userModel.Email" class="form-control" placeholder="ornek@amasya.edu.tr" />
+                <ValidationMessage For="@(() => userModel.Email)" />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Şifre</label>
+                <InputText id="password" @bind-Value="userModel.Password" type="password" class="form-control" placeholder="Şifrenizi girin" />
+                <ValidationMessage For="@(() => userModel.Password)" />
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-login">Giriş Yap</button>
+            </div>
+
+            @if (loginErrorMessage != null)
+            {
+                <div class="error-message">@loginErrorMessage</div>
+            }
+        </EditForm>
+
+        <div class="login-footer">
+            <p>Şifrenizi mi unuttunuz? <a href="/sifre-sifirla">Şifremi Sıfırla</a></p>
+            <p>İlk kez mi kullanıyorsunuz? <a href="/register">Hesap Oluştur</a></p>
+        </div>
+    </div>
+</div>
+
+@code {
+    private UserModel userModel = new UserModel();
+    private string loginErrorMessage;
+
+    private async Task HandleLogin()
+    {
+        // Kullanıcıyı doğrulamak için veritabanından kontrol ediyoruz
+        var user = await dbContext.Users
+            .FirstOrDefaultAsync(u => u.Email == userModel.Email);
+
+        if (user == null || user.Password != userModel.Password) // Şifre kontrolü
+        {
+            loginErrorMessage = "E-posta veya şifre hatalı.";
+            return;
+        }
+
+        // Başarılı giriş
+        loginErrorMessage = null;
+        Console.WriteLine($"Login successful: {userModel.Email}");
+
+        // Kullanıcıyı ana sayfaya yönlendiriyoruz
+        Navigation.NavigateTo("/home");
+    }
+
+    public class UserModel
+    {
+        [Required(ErrorMessage = "E-posta alanı gereklidir.")]
+        [EmailAddress(ErrorMessage = "Geçerli bir e-posta adresi giriniz.")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "Şifre alanı gereklidir.")]
+        [MinLength(8, ErrorMessage = "Şifre en az 8 karakter olmalıdır.")]
+        public string Password { get; set; }
+    }
+}

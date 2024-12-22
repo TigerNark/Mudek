@@ -1,0 +1,132 @@
+.lesson-details {
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.lesson-details h4 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-details label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.lesson-details input {
+    width: calc(100% - 10px);
+    padding: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.lesson-details button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.lesson-details button:hover {
+    background-color: #45a049;
+}
+
+.lesson-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.lesson-details ul li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.lo-po-matrix {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.lo-po-matrix table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.lo-po-matrix th, .lo-po-matrix td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+}
+
+.lo-po-matrix th {
+    background-color: #f2f2f2;
+}
+
+.lo-po-matrix input[type="number"] {
+    width: 40px;
+    padding: 3px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.total-row {
+    font-weight: bold;
+    background-color: #e6e6e6;
+}
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+.add-outcome-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.add-outcome-button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}

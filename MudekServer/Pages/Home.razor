@@ -1,0 +1,123 @@
+﻿@page "/home"
+
+<PageTitle>Ana Sayfa - Amasya Üniversitesi MÜDEK Sistemi</PageTitle>
+
+<style>
+    .welcome-section {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .uni-logo {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .welcome-title {
+        color: #1a365d;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .welcome-subtitle {
+        color: #4a5568;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .info-card {
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .card-title {
+        color: #2c5282;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .link-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .link-list li {
+        margin-bottom: 8px;
+    }
+
+    .link-list a {
+        color: #3182ce;
+        text-decoration: none;
+    }
+
+    .link-list a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="welcome-section">
+    <div style="display: flex; align-items: center; gap: 15px;">
+        <img src="amasya-üni-logo.png" alt="Amasya Üniversitesi Logo" class="uni-logo">
+        <div>
+            <h1 class="welcome-title">Amasya Üniversitesi</h1>
+            <h2 class="welcome-subtitle">MÜDEK Sistemine Hoşgeldiniz</h2>
+        </div>
+    </div>
+
+    <div class="card-grid">
+        <div class="info-card">
+            <h3 class="card-title">Hızlı Erişim</h3>
+            <ul class="link-list">
+                <li><a href="/documents">📄 Dökümanlar</a></li>
+                <li><a href="/evaluations">✓ Değerlendirmeler</a></li>
+                <li><a href="/reports">📊 Raporlar</a></li>
+            </ul>
+        </div>
+        
+        <div class="info-card">
+            <h3 class="card-title">Duyurular</h3>
+            <ul class="link-list">
+                @foreach (var announcement in announcements)
+                {
+                    <li>📢 @announcement</li>
+                }
+            </ul>
+        </div>
+        
+        <div class="info-card">
+            <h3 class="card-title">İstatistikler</h3>
+            <ul class="link-list">
+                <li>📚 Toplam Program: @totalPrograms</li>
+                <li>📝 Değerlendirme Sayısı: @evaluationCount</li>
+                <li>👥 Aktif Kullanıcı: @activeUsers</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<string> announcements = new List<string>
+    {
+        "2024 Değerlendirme süreci başlamıştır.",
+        "Yeni dökümanlar sisteme yüklenmiştir.",
+        "15 Nisan tarihinde genel toplantı yapılacaktır."
+    };
+
+    private int totalPrograms = 25;
+    private int evaluationCount = 150;
+    private int activeUsers = 75;
+}

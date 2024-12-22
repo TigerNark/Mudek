@@ -1,0 +1,184 @@
+@page "/lessons"
+@using MudekServer.Models
+@using Microsoft.AspNetCore.WebUtilities
+@using MudekServer.Services
+@inject NavigationManager NavigationManager
+@inject LessonService LessonService
+
+<head>
+    <link rel="stylesheet" href="css/Lesson.css">
+</head>
+
+<h3>Ders Listesi</h3>
+
+<button class="save-button" @onclick="ShowAddLessonForm">Ders Ekle</button>
+
+@if (showAddForm)
+{
+    <div class="add-lesson-form">
+        <label>Ders Kodu: </label>
+        <input type="text" @bind="newLesson.CourseCode" />
+
+        <label>Ders Adı: </label>
+        <input type="text" @bind="newLesson.CourseName" />
+
+        <label>Zorunlu mu?: </label>
+        <input type="checkbox" @bind="newLesson.IsMandatory" />
+
+        <label>Grup Kodu: </label>
+        <input type="text" @bind="newLesson.GroupCode" />
+
+        <label>AKTS: </label>
+        <input type="number" @bind="newLesson.AKTS" />
+
+        <button class="save-button" @onclick="AddLesson">Kaydet</button>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="text-danger">@errorMessage</div>
+        }
+    </div>
+}
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Ders Kodu</th>
+            <th>Ders Adı</th>
+            <th>Zorunlu/Seçmeli</th>
+            <th>Grup Kodu</th>
+            <th>AKTS</th>
+            <th>P1</th>
+            <th>P2</th>
+            <th>P3</th>
+            <th>P4</th>
+            <th>P5</th>
+            <th>P6</th>
+            <th>P7</th>
+            <th>P8</th>
+            <th>P9</th>
+            <th>P10</th>
+            <th>P11</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var lesson in lessons)
+        {
+            <tr @onclick="@(() => NavigateToLessonDetails(lesson.CourseCode))">
+                <td>@lesson.CourseCode</td>
+                <td>@lesson.CourseName</td>
+                <td>@(lesson.IsMandatory ? "Zorunlu" : "Seçmeli")</td>
+                <td>@lesson.GroupCode</td>
+                <td>@lesson.AKTS</td>
+
+                @if (lesson.ProgramOutcomes != null)
+                {
+                    <td>@lesson.ProgramOutcomes.P1</td>
+                    <td>@lesson.ProgramOutcomes.P2</td>
+                    <td>@lesson.ProgramOutcomes.P3</td>
+                    <td>@lesson.ProgramOutcomes.P4</td>
+                    <td>@lesson.ProgramOutcomes.P5</td>
+                    <td>@lesson.ProgramOutcomes.P6</td>
+                    <td>@lesson.ProgramOutcomes.P7</td>
+                    <td>@lesson.ProgramOutcomes.P8</td>
+                    <td>@lesson.ProgramOutcomes.P9</td>
+                    <td>@lesson.ProgramOutcomes.P10</td>
+                    <td>@lesson.ProgramOutcomes.P11</td>
+                }
+                else
+                {
+                    <td colspan="11">Program Outcomes mevcut değil</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<Lesson> lessons = new();
+    private bool showAddForm = false;
+    private Lesson newLesson = new();
+    private string errorMessage = "";
+
+protected override async Task OnInitializedAsync()
+{
+    try 
+    {
+        lessons = await LessonService.GetLessons(true);
+        StateHasChanged(); // UI'ı manuel olarak yenile
+    }
+    catch (Exception ex)
+    {
+        // Hata yönetimi
+        Console.WriteLine($"Hata oluştu: {ex.Message}");
+    }
+}
+    private async Task GetLessons()
+    {
+        // Veritabanından dersleri almak için Service kullanılır
+        lessons = await LessonService.GetLessons();
+    }
+
+    private async Task CheckForUpdates()
+{
+    var uri = NavigationManager.ToAbsoluteUri(NavigationManager.Uri);
+    var queryParameters = QueryHelpers.ParseQuery(uri.Query);
+
+    if (queryParameters.TryGetValue("courseCode", out var courseCode))
+    {
+        var lesson = lessons.FirstOrDefault(l => l.CourseCode == courseCode);
+        if (lesson != null)
+        {
+            for (int i = 1; i <= 11; i++)
+            {
+                if (queryParameters.TryGetValue($"P{i}", out var value))
+                {
+                    if (int.TryParse(value, out int intValue))
+                    {
+                        lesson.ProgramOutcomes ??= new ProgramOutcomes();
+                        var property = typeof(ProgramOutcomes).GetProperty($"P{i}");
+                        property?.SetValue(lesson.ProgramOutcomes, intValue);
+                    }
+                }
+            }
+
+            // Güncellemeleri asenkron olarak yap
+            await LessonService.UpdateLessonProgramOutcomes(lesson);
+        }
+    }
+}
+    private void ShowAddLessonForm()
+    {
+        showAddForm = true;
+        newLesson = new Lesson(); // Yeni ders nesnesi oluştur
+        errorMessage = "";
+    }
+
+    private async Task AddLesson()
+    {
+        // Aynı ders kodu ve adı ile başka bir ders olup olmadığını kontrol et
+        var exists = lessons.Any(l => l.CourseCode == newLesson.CourseCode && l.CourseName == newLesson.CourseName);
+        if (exists)
+        {
+            errorMessage = "Bu ders adı ve koduna sahip bir ders zaten mevcut.";
+            return;
+        }
+
+        // Ders veritabanına kaydedilir
+        await LessonService.AddLesson(newLesson);
+
+        // Dersler tekrar yüklenir (veritabanından alındığı için)
+        await GetLessons();
+
+        // Form sıfırlanır
+        newLesson = new Lesson();
+        errorMessage = "";
+        showAddForm = false;
+    }
+
+    private void NavigateToLessonDetails(string courseCode)
+    {
+        // Ders detay sayfasına yönlendir
+        NavigationManager.NavigateTo($"/lessons/{courseCode}");
+    }
+}

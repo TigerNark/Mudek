@@ -1,0 +1,245 @@
+@page "/exam-analysis"
+@using MudekServer.Models
+@using MudekServer.Services
+@inject LessonService LessonService
+
+<link href="css/exam-analysis.css" rel="stylesheet" />
+
+<h3>Ders Analizi ve Değerlendirme</h3>
+
+<!-- Ders Seçimi -->
+<div class="selection-form">
+    <label>Ders Seçin: </label>
+    <select @onchange="DersSecildi">
+        <option disabled selected>Bir ders seçin</option>
+        @foreach (var ders in Dersler)
+        {
+            <option value="@ders.CourseCode">@ders.CourseName</option>
+        }
+    </select>
+    <button @onclick="LoadLessonObjectives">ÖÇ ve PÇ Verilerini Göster</button>
+</div>
+
+<!-- ÖÇ ve PÇ İlişkisi Tablosu -->
+@if (lessonObjectives.Any())
+{
+    <h4>@selectedLesson Dersine Ait Öğrenim Çıktıları ve Program Çıktıları</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Program Çıktıları</th>
+                @foreach (var objective in programOutcomes)
+                {
+                    <th>@objective</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var objective in lessonObjectives)
+            {
+                <tr>
+                    <td>@objective.Name</td>
+                    @foreach (var outcome in programOutcomes)
+                    {
+                        <td>@(objective.RelatedOutcomes.TryGetValue(outcome, out int value) ? value.ToString() : "0")</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<!-- Sınav Türü Seçimi -->
+@if (lessonObjectives.Any())
+{
+    <div class="selection-form">
+        <label>Sınav Türü Seçin: </label>
+        <select @bind="selectedExamType">
+            @foreach (var exam in examTypes)
+            {
+                <option value="@exam">@exam</option>
+            }
+        </select>
+        <button @onclick="LoadExamData">Sınav Verilerini Göster</button>
+    </div>
+}
+
+<!-- Sınav Soruları ve ÖÇ İlişkisi Tablosu -->
+@if (examQuestions.Any())
+{
+    <h4>@selectedLesson Dersinin @selectedExamType Sınavı</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Soru No</th>
+                @for (int i = 1; i <= maxObjectives; i++)
+                {
+                    <th>ÖÇ @i</th>
+                }
+                <th>Maks Puan</th>
+                <th>Öğrenci Notu</th>
+                <th>Başarı Puanı</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var question in examQuestions)
+            {
+                <tr>
+                    <td>@question.QuestionNumber</td>
+                    @for (int i = 1; i <= maxObjectives; i++)
+                    {
+                        <td>@(question.Objectives.Contains(i) ? "1" : "0")</td>
+                    }
+                    <td>@question.MaxScore</td>
+                    <td>@question.StudentScore</td>
+                    <td>@CalculateSuccessPoint(question)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    // Ders verileri
+    private List<Lesson> Dersler = new List<Lesson>();
+    private Lesson seciliDers;
+    private string selectedLesson;
+    private List<LessonObjective> lessonObjectives = new();
+
+    // Sınav Türleri
+    private List<string> examTypes = new() { "Vize", "Final", "Bütünleme" };
+    private string selectedExamType;
+    private bool isLoading = true;
+
+    // Sınav Soruları
+    private List<ExamQuestion> examQuestions = new();
+    private int maxObjectives = 3; // ÖÇ sayısı
+    private List<string> programOutcomes = new() { "P1", "P2", "P3", "P4", "P5" };
+
+    // Sabit değerler
+    private const double EvaluationWeight = 1.0; // Değerlendirme Ağırlığı
+
+    // Dersin ÖÇ ve PÇ ilişkileri
+    private void LoadLessonObjectives()
+    {
+        lessonObjectives.Clear();
+        if (selectedLesson == "PH101")
+        {
+            lessonObjectives = new List<LessonObjective>
+        {
+        new LessonObjective { Name = "Ö1", RelatedOutcomes = new Dictionary<string, int> { { "P1", 5 }, { "P3", 4 } } },
+        new LessonObjective { Name = "Ö2", RelatedOutcomes = new Dictionary<string, int> { { "P2", 3 }, { "P4", 5 } } },
+        new LessonObjective { Name = "Ö3", RelatedOutcomes = new Dictionary<string, int> { { "P5", 2 } } }
+        };
+        }
+        else if (selectedLesson == "MATH101")
+        {
+            lessonObjectives = new List<LessonObjective>
+        {
+        new LessonObjective { Name = "Ö1", RelatedOutcomes = new Dictionary<string, int> { { "P1", 4 }, { "P2", 3 } } },
+        new LessonObjective { Name = "Ö2", RelatedOutcomes = new Dictionary<string, int> { { "P3", 5 } } },
+        new LessonObjective { Name = "Ö3", RelatedOutcomes = new Dictionary<string, int> { { "P4", 2 }, { "P5", 3 } } }
+        };
+        }
+    }
+
+    // Sınav verileri
+    private void LoadExamData()
+    {
+        examQuestions.Clear();
+        if (selectedLesson == "PH101" && selectedExamType == "Vize")
+        {
+            examQuestions = new List<ExamQuestion>
+{
+new ExamQuestion { QuestionNumber = 1, Objectives = new List<int> { 1, 2 }, MaxScore = 20, StudentScore = 15,
+LessonObjective = "Ö1" },
+new ExamQuestion { QuestionNumber = 2, Objectives = new List<int> { 2, 3 }, MaxScore = 20, StudentScore = 18,
+LessonObjective = "Ö2" },
+new ExamQuestion { QuestionNumber = 3, Objectives = new List<int> { 1, 3 }, MaxScore = 20, StudentScore = 14,
+LessonObjective = "Ö1" },
+new ExamQuestion { QuestionNumber = 4, Objectives = new List<int> { 1, 2 }, MaxScore = 20, StudentScore = 16,
+LessonObjective = "Ö2" },
+new ExamQuestion { QuestionNumber = 5, Objectives = new List<int> { 2, 3 }, MaxScore = 20, StudentScore = 19,
+LessonObjective = "Ö3" }
+};
+        }
+    }
+
+    // Başarı puanı hesaplama metodu
+    private double CalculateSuccessPoint(ExamQuestion question)
+    {
+        // Seçili dersin AKTS kredisini al
+        var lesson = Dersler.FirstOrDefault(l => l.CourseCode == selectedLesson);
+        if (lesson == null) return 0;
+
+        // Sorunun ilgili olduğu öğrenim çıktısını bul
+        var objective = lessonObjectives.FirstOrDefault(o => o.Name == question.LessonObjective);
+        if (objective == null) return 0;
+
+        // A: ÖÇ1 - PÇ1 eşleşme katsayısı (P1 için olan değeri al)
+        double A = objective.RelatedOutcomes.TryGetValue("P1", out int value) ? value / 5.0 : 0;
+
+        // B: Soru ÖÇ eşleşme katsayısı (boolean olarak 1 veya 0)
+        double B = question.Objectives.Any() ? 1 : 0;
+
+        // C: Değerlendirme Ağırlığı
+        double C = EvaluationWeight;
+
+        // D: AKTS
+        double D = lesson.AKTS / 10.0;
+
+        // E: Öğrencinin aldığı puan
+        double E = question.StudentScore;
+
+        // F: Max Puan / 100
+        double F = question.MaxScore / 100.0;
+
+        // Formül: (A*B*C*D*E)/(A*B*C*D*F)
+        double successPoint = (A * B * C * D * E) / (A * B * C * D * F);
+
+        return Math.Round(successPoint, 2);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Öğrencileri ve sınav türlerini asenkron olarak veritabanından al
+            Dersler = await LessonService.GetLessons();
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Veri yüklenirken hata oluştu: {ex.Message}");
+        }
+        finally
+        {
+            // Yükleme durumu güncelleniyor
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+    private async void DersSecildi(ChangeEventArgs e)
+    {
+        if (e.Value != null)
+        {
+            // Ders seçimi yapıldı, ders bilgilerini yükle
+            seciliDers = await LessonService.GetLessonByCodeAsync(e.Value.ToString());
+        }
+    }
+
+    public class LessonObjective
+    {
+        public string Name { get; set; }
+        public Dictionary<string, int> RelatedOutcomes { get; set; }
+    }
+
+    public class ExamQuestion
+    {
+        public int QuestionNumber { get; set; }
+        public List<int> Objectives { get; set; }
+        public int MaxScore { get; set; }
+        public int StudentScore { get; set; }
+        public string LessonObjective { get; set; }
+    }
+}

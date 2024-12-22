@@ -1,0 +1,114 @@
+/* Amasya University MÜDEK System Login Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #004A7F, #008ECC);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-card {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 74, 127, 0.2);
+    text-align: center;
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.uni-logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+.login-title {
+    font-size: 1.6rem;
+    color: #004A7F;
+    font-weight: bold;
+}
+
+.login-subtitle {
+    font-size: 1rem;
+    color: #008ECC;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #004A7F;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #008ECC;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #004A7F;
+    box-shadow: 0 0 0 3px rgba(0, 74, 127, 0.1);
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #004A7F, #008ECC);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+    background: linear-gradient(135deg, #008ECC, #004A7F);
+}
+
+.login-footer {
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+.login-footer a {
+    color: #004A7F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
