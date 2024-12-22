@@ -17,81 +17,81 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MudekServer
 build_property.RootNamespace = MudekServer
-build_property.ProjectDir = C:\Users\ÖMER OSMAN\Desktop\son hali 22.12 03.20\MudekServer\MudekServer\
+build_property.ProjectDir = C:\Users\MSI\Documents\GitHub\Mudek\MudekServer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ÖMER OSMAN\Desktop\son hali 22.12 03.20\MudekServer\MudekServer
+build_property.MSBuildProjectDirectory = C:\Users\MSI\Documents\GitHub\Mudek\MudekServer
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/App.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/Counter.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/Exam-analysis.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/Exam-analysis.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhhbS1hbmFseXNpcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/Exam.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/Exam.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhhbS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/FetchData.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/Home.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/LessonDetails.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/LessonDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVzc29uRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/Lessons.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/Lessons.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVzc29ucy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/LessonScheduler.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/LessonScheduler.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVzc29uU2NoZWR1bGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/Login.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Shared/LoginLayout.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Shared/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Shared/SurveyPrompt.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/_Imports.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Shared/MainLayout.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-pzbr5f3od1
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Shared/NavMenu.razor]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-2jbbgstoxh
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/Error.cshtml]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ÖMER OSMAN/Desktop/son hali 22.12 03.20/MudekServer/MudekServer/Pages/_Host.cshtml]
+[C:/Users/MSI/Documents/GitHub/Mudek/MudekServer/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
