@@ -1,104 +1,169 @@
-/* Tablo Geneli */
+/* Ana Container Stili */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Başlık Stili */
+h3, h4 {
+    color: #2d3748;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/* Form Grup Stili */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group label {
+    min-width: 150px;
+    color: #4a5568;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Select ve Input Stilleri */
+select, input[type="number"] {
+    padding: 10px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2d3748;
+    background-color: white;
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+select {
+    cursor: pointer;
+}
+
+select:focus, input[type="number"]:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Tablo Stili */
 .table {
     width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-spacing: 0;
+    border-collapse: separate;
+    margin: 25px 0;
+    border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-.table:hover {
-    transform: scale(1.01);
-}
-
-/* Başlık ve Hücreler */
-th, td {
-    padding: 15px;
+.table thead th {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 16px;
+    font-weight: 600;
     text-align: left;
     font-size: 14px;
-    color: #333;
-    border-bottom: 1px solid #ddd;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Tablo Başlıkları */
-th {
-    background-color: #005a8e;
-    color: #fff;
-    font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/* Satır Hover Etkisi */
-tr:hover td {
-    background-color: #e6f7ff;
-    color: #005a8e;
+.table tbody tr {
+    transition: background-color 0.3s ease;
 }
 
-/* Alternatif Satır Renkleri */
-tbody tr:nth-child(odd) td {
-    background-color: #fafafa;
+.table tbody tr:nth-child(odd) {
+    background-color: #f8fafc;
 }
 
-tbody tr:nth-child(even) td {
-    background-color: #f1f1f1;
+.table tbody tr:nth-child(even) {
+    background-color: white;
 }
 
-/* Hücrelerdeki Input Alanları */
-td input[type="number"] {
-    width: 80px;
-    padding: 8px;
+.table tbody tr:hover {
+    background-color: #eef2ff;
+}
+
+.table td {
+    padding: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Checkbox Container Stili */
+.table td label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
     font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: border-color 0.3s;
+    color: #4a5568;
 }
 
-td input[type="number"]:focus {
-    border-color: #005a8e;
-    outline: none;
-}
-
-/* Sütunları ayıran border'lar */
-table th, table td {
-    border-left: 1px solid #ddd;
-}
-
-table th:first-child, table td:first-child {
-    border-left: none;
-}
-
-/* Checkbox stil */
-label input[type="checkbox"] {
-    margin-right: 5px;
-    margin-left: 10px;
-}
-
-/* Butonlar için stil */
-button {
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #005a8e;
-    color: white;
-    border: none;
-    border-radius: 5px;
+/* Checkbox Stili */
+.table input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #cbd5e0;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+}
+
+/* Buton Stili */
+button {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.3);
     margin-top: 20px;
 }
 
 button:hover {
-    background-color: #00497a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px -3px rgba(99, 102, 241, 0.4);
 }
 
-/* Yükleniyor Metni */
+button:active {
+    transform: translateY(0);
+}
+
+/* Yükleniyor Mesajı */
 p {
+    color: #6366f1;
     font-size: 16px;
-    color: #888;
     text-align: center;
+    padding: 20px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Not Input Stili */
+.table input[type="number"] {
+    width: 80px;
+    min-width: unset;
+    text-align: center;
+}
+
+/* Öğrenci Notları Tablosu için Özel Stil */
+.table td input[type="number"] + span {
+    margin-left: 5px;
+    color: #718096;
 }

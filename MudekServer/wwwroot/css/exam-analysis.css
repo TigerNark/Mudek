@@ -1,49 +1,146 @@
-/* Genel sayfa düzeni */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-}
-
-/* Form stilleri */
 .selection-form {
-    margin-bottom: 20px;
-}
-.selection-form select,
-.selection-form button {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.selection-form button {
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-}
-.selection-form button:hover {
-    background-color: #0056b3;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 1400px;
+    margin: 30px auto;
+    transition: transform 0.2s ease;
 }
 
-/* Tablo stilleri */
-.table {
+.selection-form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    font-size: 18px;
+    color: #2d3748;
+    margin: 20px 0 15px;
+    font-weight: 600;
+}
+
+.selection-form label {
+    display: block;
+    color: #4a5568;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.selection-form select {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-.table th,
-.table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-.table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
+    padding: 12px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    background-color: white;
 }
 
-/* Başlıklar */
-h3, h4 {
-    color: #333;
-    margin-bottom: 15px;
+.selection-form select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    outline: none;
+}
+
+.selection-form select:disabled {
+    background-color: #f8fafc;
+    cursor: not-allowed;
+}
+
+.selection-form button {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    margin-top: 15px;
+}
+
+.selection-form button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+.selection-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.lo-po-matrix {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    margin: 25px 0;
+    overflow-x: auto;
+}
+
+.lo-po-matrix table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    font-size: 14px;
+}
+
+.lo-po-matrix th {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+}
+
+.lo-po-matrix tbody th {
+    background: #f8fafc;
+    color: #2d3748;
+    text-align: left;
+    text-transform: none;
+    font-weight: 500;
+    max-width: 300px;
+}
+
+.lo-po-matrix th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.lo-po-matrix th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.lo-po-matrix td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.lo-po-matrix tr:hover td {
+    background-color: #f8fafc;
+}
+
+p {
+    color: #4a5568;
+    padding: 20px;
+    text-align: center;
+    background: #f8fafc;
+    border-radius: 10px;
+    margin: 20px 0;
 }

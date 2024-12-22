@@ -6,13 +6,15 @@
 @using System.ComponentModel.DataAnnotations
 @inject ApplicationDbContext dbContext
 @inject NavigationManager Navigation
+<head>
+    <link href="css/login.css" rel="stylesheet" />
+</head>
 
-<link href="css/login.css" rel="stylesheet" />
 
 <div class="login-container">
     <div class="login-card">
         <div class="login-header">
-            <img src="images/amasya-üni-logo.png" alt="Amasya Üniversitesi Logo" class="uni-logo">
+            <img src="amasya-üni-logo.png" alt="Amasya Üniversitesi Logo" class="uni-logo">
             <h1 class="login-title">MÜDEK Sistemi</h1>
         </div>
         <p class="login-subtitle">Kurumsal Giriş Paneli</p>

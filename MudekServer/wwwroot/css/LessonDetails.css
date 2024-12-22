@@ -1,132 +1,185 @@
 .lesson-details {
-    max-width: 800px;
-    margin: auto;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.lesson-details h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-}
-
-.lesson-details h4 {
-    font-size: 1.1rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.lesson-details label {
-    font-weight: bold;
-    margin-bottom: 0.3rem;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 1400px;
+    margin: 30px auto;
+    transition: transform 0.2s ease;
+ }
+ 
+ .lesson-details:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+ }
+ 
+ .lesson-details h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ 
+ .lesson-details h4 {
+    font-size: 18px;
+    color: #2d3748;
+    margin: 20px 0 15px;
+    font-weight: 600;
+ }
+ 
+ .lesson-details label {
     display: block;
-    font-size: 0.9rem;
-}
-
-.lesson-details input {
-    width: calc(100% - 10px);
-    padding: 6px;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.lesson-details button {
-    background-color: #4CAF50;
+    color: #4a5568;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 14px;
+ }
+ 
+ .lesson-details input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+ }
+ 
+ .lesson-details input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    outline: none;
+ }
+ 
+ .lesson-details button {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
     color: white;
-    padding: 8px 15px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
+    font-weight: 600;
     cursor: pointer;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-}
-
-.lesson-details button:hover {
-    background-color: #45a049;
-}
-
-.lesson-details ul {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    margin-top: 15px;
+ }
+ 
+ .lesson-details button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+ }
+ 
+ .lesson-details ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 0.5rem;
-}
-
-.lesson-details ul li {
-    margin-bottom: 0.3rem;
-    font-size: 0.9rem;
-}
-
-.lo-po-matrix {
-    overflow-x: auto;
-    margin-top: 1rem;
-}
-
-.lo-po-matrix table {
+    margin: 15px 0;
+ }
+ 
+ .lesson-details ul li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+ }
+ 
+ .lesson-details ul li:hover {
+    background: #edf2f7;
+    transform: translateX(5px);
+ }
+ 
+ .lo-po-matrix {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    margin: 25px 0;
+ }
+ 
+ .lo-po-matrix table {
     width: 100%;
-    border-collapse: collapse;
-    font-size: 0.9rem;
-}
-
-.lo-po-matrix th, .lo-po-matrix td {
-    border: 1px solid #ddd;
-    padding: 6px;
-    text-align: center;
-}
-
-.lo-po-matrix th {
-    background-color: #f2f2f2;
-}
-
-.lo-po-matrix input[type="number"] {
-    width: 40px;
-    padding: 3px;
-    text-align: center;
-    font-size: 0.8rem;
-}
-
-.total-row {
-    font-weight: bold;
-    background-color: #e6e6e6;
-}
-.alert {
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-}
-
-.alert-danger {
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-    color: #721c24;
-}
-.add-outcome-button {
-    background-color: #007bff;
+    border-spacing: 0;
+    border-collapse: separate;
+    font-size: 14px;
+ }
+ 
+ .lo-po-matrix th {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
     color: white;
-    padding: 8px 15px;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+ }
+ 
+ .lo-po-matrix th:first-child {
+    border-radius: 8px 0 0 8px;
+ }
+ 
+ .lo-po-matrix th:last-child {
+    border-radius: 0 8px 8px 0;
+ }
+ 
+ .lo-po-matrix td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+ }
+ 
+ .lo-po-matrix input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+ }
+ 
+ .lo-po-matrix input[type="number"]:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+ }
+ 
+ .total-row {
+    background: #edf2f7;
+    font-weight: 600;
+ }
+ 
+ .total-row td {
+    color: #2d3748;
+ }
+ 
+ .alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+ }
+ 
+ .alert-danger {
+    background: linear-gradient(to right, #fee2e2, #fecaca);
     border: none;
-    border-radius: 3px;
+    color: #991b1b;
+    box-shadow: 0 4px 15px rgba(248, 113, 113, 0.2);
+ }
+ 
+ .add-outcome-button {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
     cursor: pointer;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-}
-
-.add-outcome-button:hover {
-    background-color: #0056b3;
-}
-
-.alert {
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-}
-
-.alert-danger {
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-    color: #721c24;
-}
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+ }
+ 
+ .add-outcome-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+ }

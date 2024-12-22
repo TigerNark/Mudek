@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bpk8xqwxhs</Fingerprint>
-      <Integrity>z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=</Integrity>
+      <Fingerprint>6gzpyzhau4</Fingerprint>
+      <Integrity>SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap\bootstrap.min.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uv07jxvdd2</Fingerprint>
-      <Integrity>xrjjO70dEW20XFQI+qbmrQOpOipWz1fBU8CmYTCQlvA=</Integrity>
+      <Fingerprint>0ynf6elbyq</Fingerprint>
+      <Integrity>CAuTe0Ry/jyk517WMlqRg1GpRJW1er04hQbaM73aQvg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Exam.css'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7qrycnvmkc</Fingerprint>
-      <Integrity>33gBzy/eNgYzx586CArnwXAG8m/vNxbswi3/KXbhmb8=</Integrity>
+      <Fingerprint>efslvgtyux</Fingerprint>
+      <Integrity>1m3AWFa3DdqlcpcJYZtAL8yr9aXtkDOJPlXhlClIQOA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\exam-analysis.css'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jvjljj0sg2</Fingerprint>
-      <Integrity>IYm4JnAyC422WUo5fGNPa87qcFStUNE7nIh3Re5bvRk=</Integrity>
+      <Fingerprint>acx01h5m8o</Fingerprint>
+      <Integrity>yv0LzJp8KGNgooeYIq2NDW++362CcPSEXBq5QG51hfI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Lesson.css'))</OriginalItemSpec>
@@ -120,8 +120,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>g1pgcp3emk</Fingerprint>
-      <Integrity>xCJ0PhFmGUg61Z8kXHSXH05rUivPb/ssOkLhhQXYAlg=</Integrity>
+      <Fingerprint>7x2l38d5p7</Fingerprint>
+      <Integrity>CxWRIYWJPzpL3qwdXuXw9WkkVVkeHI7YGUInK2gg4dc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LessonDetails.css'))</OriginalItemSpec>
@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dq7gl9qiye</Fingerprint>
-      <Integrity>JaSHuk7p6Oh+F21q9px0xjvYs1gvXypIlk61BIDoIr8=</Integrity>
+      <Fingerprint>y2y33u9c7i</Fingerprint>
+      <Integrity>SnqQS+7Xh9gAOqyt3Qaklc7ZA8K3fhg47NxFQATlM98=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</OriginalItemSpec>
@@ -360,23 +360,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\icon-192.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MudekServer.v2ys483jb9.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MudekServer.lgzlo3iegl.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>MudekServer</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MudekServer</BasePath>
-      <RelativePath>MudekServer.v2ys483jb9.bundle.scp.css</RelativePath>
+      <RelativePath>MudekServer.lgzlo3iegl.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>v2ys483jb9</Fingerprint>
-      <Integrity>hy8LxWzrg6gN3EOvdn+AcfRW4W6wzQUw2wfqkxcLKtg=</Integrity>
+      <Fingerprint>lgzlo3iegl</Fingerprint>
+      <Integrity>O7UufnKlLm+26m3pnNgLD7PuLdMX+JR3IH4Q7t6kQs4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MudekServer.v2ys483jb9.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MudekServer.lgzlo3iegl.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

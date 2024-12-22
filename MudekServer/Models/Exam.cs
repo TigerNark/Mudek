@@ -7,7 +7,7 @@ namespace MudekServer.Models{
     public int Id { get; set; }
     public string ExamType { get; set; }  // Örneğin "Vize", "Final" vb.
     public int Percentage { get; set; }
-    public List<ExamQuestion> Questions { get; set; }  // Sınavın soruları
+   
    
 }
 

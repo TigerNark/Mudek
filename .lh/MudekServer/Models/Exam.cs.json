@@ -1,0 +1,18 @@
+{
+    "sourceFile": "MudekServer/Models/Exam.cs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1734889787794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1734889787794,
+            "name": "Commit-0",
+            "content": "using static MudekServer.Pages.Exam_analysis;\r\n\r\nnamespace MudekServer.Models{\r\n\r\n    public class Exam\r\n{\r\n    public int Id { get; set; }\r\n    public string ExamType { get; set; }  // Örneğin \"Vize\", \"Final\" vb.\r\n    public int Percentage { get; set; }\r\n   \r\n   \r\n}\r\n\r\n}"
+        }
+    ]
+}

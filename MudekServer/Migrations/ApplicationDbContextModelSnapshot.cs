@@ -29,9 +29,6 @@ namespace MudekServer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ExamId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Points")
                         .HasColumnType("int");
 
@@ -40,8 +37,6 @@ namespace MudekServer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ExamId");
 
                     b.ToTable("ExamQuestions");
                 });
@@ -267,13 +262,6 @@ namespace MudekServer.Migrations
                     b.ToTable("Users", (string)null);
                 });
 
-            modelBuilder.Entity("MudekServer.ExamQuestion", b =>
-                {
-                    b.HasOne("MudekServer.Models.Exam", null)
-                        .WithMany("Questions")
-                        .HasForeignKey("ExamId");
-                });
-
             modelBuilder.Entity("MudekServer.Models.LearningOutcome", b =>
                 {
                     b.HasOne("MudekServer.Models.Lesson", "Lesson")
@@ -314,11 +302,6 @@ namespace MudekServer.Migrations
             modelBuilder.Entity("MudekServer.ExamQuestion", b =>
                 {
                     b.Navigation("LearningOutcomes");
-                });
-
-            modelBuilder.Entity("MudekServer.Models.Exam", b =>
-                {
-                    b.Navigation("Questions");
                 });
 
             modelBuilder.Entity("MudekServer.Models.LearningOutcome", b =>

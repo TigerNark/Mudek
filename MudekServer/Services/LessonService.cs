@@ -98,5 +98,12 @@ namespace MudekServer.Services
                 throw new InvalidOperationException("Program çıktıları güncellenirken bir hata oluştu.", ex);
             }
         }
+        public async Task<Lesson> GetLessonWithLoPoRelations(string courseCode)
+    {
+        return await _context.Lessons
+            .Include(l => l.LearningOutcomes)
+            .ThenInclude(lo => lo.LoPoRelations)
+            .FirstOrDefaultAsync(l => l.CourseCode == courseCode);
+    }
     }
 }
