@@ -23,6 +23,6 @@ namespace MudekServer.Models
 
         // LearningOutcomes ile One-to-Many ilişki
         public List<LearningOutcome> LearningOutcomes { get; set; } = new List<LearningOutcome>();
-        
+       
     }
 }

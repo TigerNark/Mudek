@@ -3,14 +3,14 @@
 @inject LessonService LessonService
 @inject SinavTurService SinavTurService
 @inject StudentService StudentService
-
+@inject SoruService soruService
 @using MudekServer.Models
 @using MudekServer.Services
-
 
 <head>
     <link rel="stylesheet" href="css\Exam.css">
 </head>
+
 <h3>Sınav Girişi</h3>
 
 @if (isLoading)
@@ -39,7 +39,7 @@ else
             <option disabled selected>Bir sınav türü seçin</option>
             @foreach (var sinavTur in SinavTurleri)
             {
-                <option value="@sinavTur.Adi">@sinavTur.Adi</option>
+                <option value="@sinavTur.SinavTurId">@sinavTur.Adi</option>
             }
         </select>
     </div>
@@ -76,7 +76,7 @@ else
                     <tr>
                         <td>Soru @soru.SoruNumarasi</td>
                         <td>
-                            <input type="number" @bind="soru.Puan" min="0" @oninput="CheckTotalPuan" />
+                            <input type="number" @bind="soru.Puan" min="0" />
                         </td>
                         <td>
                             @foreach (var ogrenimCiktisi in seciliDers.LearningOutcomes)
@@ -94,8 +94,10 @@ else
         </table>
 
         <button @onclick="OnNextClick">Sonraki</button>
+        <button @onclick="Kaydet">Verileri Kaydet</button>
     }
 }
+
 
 @if (showStudentScores)
 {
@@ -129,33 +131,67 @@ else
         </tbody>
     </table>
 
-    <button >Kaydet</button>
+    <button>Kaydet</button>
 }
-
 
 @code {
     private List<Lesson> Dersler = new List<Lesson>();
-    private List<SinavTur> SinavTurleri = new List<SinavTur>(); // Bu listeyi dinamik hale getireceğiz
+    private List<SinavTur> SinavTurleri = new List<SinavTur>();
     private List<Soru> Sorular = new List<Soru>();
     private Lesson seciliDers;
     private SinavTur seciliSinavTur;
     private int soruSayisi;
     private int? sinavYuzdesi;
     private bool isLoading = true;
-    private List<Student> ogrenciler = new List<Student>(); // Öğrenci Listesi
-    private Dictionary<int, Dictionary<int, int>> ogrenciNotlar = new Dictionary<int, Dictionary<int, int>>(); // Öğrenci Notları
-    private Dictionary<int, Dictionary<int, List<string>>> ogrenciOgretimCiktilari = new Dictionary<int, Dictionary<int, List<string>>>(); // Öğrenim çıktıları
+    private List<Student> ogrenciler = new List<Student>();
+    private Dictionary<int, Dictionary<int, int>> ogrenciNotlar = new Dictionary<int, Dictionary<int, int>>();
+    private Dictionary<int, Dictionary<int, List<string>>> OgretimCiktilari = new Dictionary<int, Dictionary<int,
+    List<string>>>();
+    private bool showStudentScores = false;
 
-    private bool showStudentScores = false; // Öğrenci notlarını göstermek için kullanılan flag
+    private async Task Kaydet()
+{
+    try
+    {
+        // DersId, SinavTurId ve SinavYuzdesi'yi sorulara ekle
+        foreach (var soru in Sorular)
+        {
+            soru.DersId = seciliDers.CourseCode; // CourseCode, Lesson tablosundan alınıyor
+            soru.SinavTuruId = seciliSinavTur.SinavTurId; // SinavTurId, SinavTur tablosundan alınıyor
+            soru.SinavYuzdesi = sinavYuzdesi.HasValue ? sinavYuzdesi.Value : 0; // SinavYuzdesi kaydediliyor
+
+            // Sorulara ait olan öğrenim çıktılarının alınması
+            if (OgretimCiktilari.ContainsKey(soru.SoruNumarasi))
+            {
+                // O soruya ait öğrenim çıktıları alınıyor
+                soru.OgrenimCiktilari = OgretimCiktilari[soru.SoruNumarasi].SelectMany(kv => kv.Value).Distinct().ToList();
+            }
+            else
+            {
+                // Öğrenim çıktısı yoksa boş bir liste atanır
+                soru.OgrenimCiktilari = new List<string>();
+            }
+        }
+
+        await soruService.SorulariKaydetAsync(Sorular); // Veritabanına kaydet
+        Console.WriteLine("Sorular başarıyla kaydedildi!");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Hata: {ex.Message}");
+    }
+}
+
+
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            // Öğrencileri ve sınav türlerini asenkron olarak veritabanından al
+            // Dersleri, sınav türlerini ve öğrencileri asenkron olarak yükle
             Dersler = await LessonService.GetLessons();
             ogrenciler = await StudentService.GetStudentsAsync();
-            SinavTurleri = await SinavTurService.GetSinavTurleriAsync(); // SinavTurService üzerinden sınav türlerini alıyoruz
+            SinavTurleri = await SinavTurService.GetSinavTurleriAsync();
         }
         catch (Exception ex)
         {
@@ -163,7 +199,6 @@ else
         }
         finally
         {
-            // Yükleme durumu güncelleniyor
             isLoading = false;
             StateHasChanged();
         }
@@ -173,7 +208,6 @@ else
     {
         if (e.Value != null)
         {
-            // Ders seçimi yapıldı, ders bilgilerini yükle
             seciliDers = await LessonService.GetLessonByCodeAsync(e.Value.ToString());
             seciliSinavTur = null; // Sınav türünü sıfırlıyoruz
             Sorular.Clear(); // Soruları sıfırlıyoruz
@@ -183,7 +217,7 @@ else
 
     private void SinavTuruSecildi(ChangeEventArgs e)
     {
-        seciliSinavTur = SinavTurleri.FirstOrDefault(st => st.Adi == e.Value.ToString());
+        seciliSinavTur = SinavTurleri.FirstOrDefault(st => st.SinavTurId == Convert.ToInt32(e.Value));
     }
 
     private void SorulariOlustur()
@@ -192,13 +226,12 @@ else
         for (int i = 1; i <= soruSayisi; i++)
         {
             Sorular.Add(new Soru
-            {
-                SoruNumarasi = i,
-                Puan = 0
-            });
+                {
+                    SoruNumarasi = i,
+                    Puan = 0
+                });
         }
 
-        // Sorular oluşturulduktan sonra, ogrenciNotlar sözlüğünü başlatıyoruz.
         foreach (var ogrenci in ogrenciler)
         {
             if (!ogrenciNotlar.ContainsKey(ogrenci.Id))
@@ -208,7 +241,6 @@ else
 
             foreach (var soru in Sorular)
             {
-                // Her öğrenci ve her soru için puan başlatıyoruz (sıfır).
                 if (!ogrenciNotlar[ogrenci.Id].ContainsKey(soru.SoruNumarasi))
                 {
                     ogrenciNotlar[ogrenci.Id][soru.SoruNumarasi] = 0;
@@ -224,35 +256,32 @@ else
 
     private async Task OnNextClick()
     {
-        // Geçiş işlemi
         showStudentScores = true; // Öğrenci notlarını göstermek için flag'yi true yapıyoruz.
     }
 
-    // OgrenimCiktisiSecildi metodu
     private void OgrenimCiktisiSecildi(Soru soru, string ogrenimCiktisi, ChangeEventArgs e)
     {
-        if ((bool)e.Value) // Eğer checkbox seçili ise
+        if ((bool)e.Value)
         {
-            // Öğrenim çıktısını ekle
-            if (!ogrenciOgretimCiktilari.ContainsKey(soru.SoruNumarasi))
+            if (!OgretimCiktilari.ContainsKey(soru.SoruNumarasi))
             {
-                ogrenciOgretimCiktilari[soru.SoruNumarasi] = new Dictionary<int, List<string>>();
+                OgretimCiktilari[soru.SoruNumarasi] = new Dictionary<int, List<string>>();
             }
 
             foreach (var ogrenci in ogrenciler)
             {
-                if (!ogrenciOgretimCiktilari[soru.SoruNumarasi].ContainsKey(ogrenci.Id))
+                if (!OgretimCiktilari[soru.SoruNumarasi].ContainsKey(ogrenci.Id))
                 {
-                    ogrenciOgretimCiktilari[soru.SoruNumarasi][ogrenci.Id] = new List<string>();
+                    OgretimCiktilari[soru.SoruNumarasi][ogrenci.Id] = new List<string>();
                 }
-                ogrenciOgretimCiktilari[soru.SoruNumarasi][ogrenci.Id].Add(ogrenimCiktisi);
+                OgretimCiktilari[soru.SoruNumarasi][ogrenci.Id].Add(ogrenimCiktisi);
             }
         }
-        else // Eğer checkbox seçimi kaldırıldıysa
+        else
         {
             foreach (var ogrenci in ogrenciler)
             {
-                ogrenciOgretimCiktilari[soru.SoruNumarasi][ogrenci.Id]?.Remove(ogrenimCiktisi);
+                OgretimCiktilari[soru.SoruNumarasi][ogrenci.Id]?.Remove(ogrenimCiktisi);
             }
         }
     }

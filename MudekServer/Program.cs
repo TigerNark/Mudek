@@ -30,6 +30,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 builder.Services.AddScoped<LessonService>();
 builder.Services.AddScoped<LoPoMatrixService, LoPoMatrixService>();
 builder.Services.AddScoped<StudentService>();
+builder.Services.AddScoped<SoruService>();
 
 // HttpClient'i server-side için ekliyoruz
 builder.Services.AddHttpClient();  // Burada HttpClient'i ekliyoruz

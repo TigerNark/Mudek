@@ -15,10 +15,11 @@ namespace MudekServer.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Exam> Exams { get; set; }
-        
+        public DbSet<Soru> Sorular { get; set; }
         public DbSet<ExamQuestion> ExamQuestions { get; set; }
 
         public DbSet<SinavTur> SinavTurleri { get; set; }  // SinavTur tablosu
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
