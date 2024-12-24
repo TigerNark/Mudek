@@ -1,0 +1,34 @@
+{
+    "sourceFile": "MudekServer/Models/StudentScore.cs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1735079839701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735079845663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n {\r\n     public class StudentScore\r\n     {\r\n         public int Id { get; set; }\r\n-        public int StudentId { get; set; } // Öğrenci kimliği\r\n+        public int Numara{ get; set; } // Öğrenci kimliği\r\n         public int QuestionNumber { get; set; } // Soru numarası\r\n         public int Score { get; set; } // Alınan not\r\n         public int MaxScore { get; set; } // Sorunun maksimum puanı\r\n         public string DersId { get; set; } // Ders kimliği\r\n"
+                },
+                {
+                    "date": 1735079859597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     public class StudentScore\r\n     {\r\n         public int Id { get; set; }\r\n         public int Numara{ get; set; } // Öğrenci kimliği\r\n-        public int QuestionNumber { get; set; } // Soru numarası\r\n+        public int SoruNumarasi { get; set; } // Soru numarası\r\n         public int Score { get; set; } // Alınan not\r\n         public int MaxScore { get; set; } // Sorunun maksimum puanı\r\n         public string DersId { get; set; } // Ders kimliği\r\n         public int SinavTuruId { get; set; } // Sınav türü kimliği\r\n"
+                },
+                {
+                    "date": 1735079880051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+namespace MudekServer.Models\r\n+{\r\n+    public class StudentScore\r\n+    {\r\n+        public int Id { get; set; }\r\n+        public int Numara{ get; set; } // Öğrenci kimliği\r\n+        public int SoruNumarasi { get; set; } // Soru numarası\r\n+        public int uan { get; set; } // Alınan not\r\n+        public int MaxScore { get; set; } // Sorunun maksimum puanı\r\n+        public string DersId { get; set; } // Ders kimliği\r\n+        public int SinavTuruId { get; set; } // Sınav türü kimliği\r\n+    }\r\n+}\r\n"
+                },
+                {
+                    "date": 1735079954593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,12 @@\n {\r\n     public class StudentScore\r\n     {\r\n         public int Id { get; set; }\r\n-        public int Numara{ get; set; } // Öğrenci kimliği\r\n-        public int SoruNumarasi { get; set; } // Soru numarası\r\n-        public int Puan { get; set; } // Alınan not\r\n-        public int MaxScore { get; set; } // Sorunun maksimum puanı\r\n-        public string DersId { get; set; } // Ders kimliği\r\n-        public int SinavTuruId { get; set; } // Sınav türü kimliği\r\n+        public int StudentId { get; set; }\r\n+        public int QuestionNumber { get; set; }\r\n+        public int Score { get; set; }\r\n+        public int MaxScore { get; set; }\r\n+        public string DersId { get; set; }\r\n+        public int SinavTuruId { get; set; }\r\n     }\r\n }\r\n"
+                }
+            ],
+            "date": 1735079839701,
+            "name": "Commit-0",
+            "content": "namespace MudekServer.Models\r\n{\r\n    public class StudentScore\r\n    {\r\n        public int Id { get; set; }\r\n        public int StudentId { get; set; } // Öğrenci kimliği\r\n        public int QuestionNumber { get; set; } // Soru numarası\r\n        public int Score { get; set; } // Alınan not\r\n        public int MaxScore { get; set; } // Sorunun maksimum puanı\r\n        public string DersId { get; set; } // Ders kimliği\r\n        public int SinavTuruId { get; set; } // Sınav türü kimliği\r\n    }\r\n}\r\n"
+        }
+    ]
+}

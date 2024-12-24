@@ -10,6 +10,4 @@ namespace MudekServer.Models
         public int Puan { get; set; }
         public List<string> OgrenimCiktilari { get; set; } = new List<string>();
     }
-
-
 }

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "MudekServer/Services/StudentService.cs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1735080374986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735081161779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,6 @@\n     public async Task<List<Student>> GetStudentsAsync()\r\n     {\r\n         return await _context.Students.ToListAsync();\r\n     }\r\n-public async Task SaveStudentScoresAsync(List<StudentScore> studentScores)\r\n-    {\r\n-        _context.StudentScores.AddRange(studentScores);  // Öğrenci notlarını ekle\r\n-        await _context.SaveChangesAsync();  // Değişiklikleri kaydet\r\n-    }\r\n+\r\n }\r\n"
+                }
+            ],
+            "date": 1735080374986,
+            "name": "Commit-0",
+            "content": "using Microsoft.EntityFrameworkCore;\r\nusing MudekServer;\r\nusing MudekServer.Data;\r\nusing MudekServer.Models;\r\n\r\npublic class StudentService\r\n{\r\n    private readonly ApplicationDbContext _context;\r\n\r\n    public StudentService(ApplicationDbContext context)\r\n    {\r\n        _context = context;\r\n    }\r\n\r\n    public async Task<List<Student>> GetStudentsAsync()\r\n    {\r\n        return await _context.Students.ToListAsync();\r\n    }\r\npublic async Task SaveStudentScoresAsync(List<StudentScore> studentScores)\r\n    {\r\n        _context.StudentScores.AddRange(studentScores);  // Öğrenci notlarını ekle\r\n        await _context.SaveChangesAsync();  // Değişiklikleri kaydet\r\n    }\r\n}\r\n"
+        }
+    ]
+}

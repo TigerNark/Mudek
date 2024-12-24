@@ -1,0 +1,18 @@
+{
+    "sourceFile": "MudekServer/Models/Soru.cs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1735079946335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1735079946335,
+            "name": "Commit-0",
+            "content": "namespace MudekServer.Models\r\n{\r\n    public class Soru\r\n    {\r\n        public int Id { get; set; }\r\n        public string DersId { get; set; }\r\n        public int SinavTuruId { get; set; }\r\n        public int SinavYuzdesi { get; set; }\r\n        public int SoruNumarasi { get; set; }\r\n        public int Puan { get; set; }\r\n        public List<string> OgrenimCiktilari { get; set; } = new List<string>();\r\n    }\r\n}\r\n"
+        }
+    ]
+}

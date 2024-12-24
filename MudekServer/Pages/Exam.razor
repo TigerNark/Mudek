@@ -98,7 +98,6 @@ else
     }
 }
 
-
 @if (showStudentScores)
 {
     <h4>Öğrenci Notları</h4>
@@ -109,7 +108,7 @@ else
                 <th>Öğrenci Adı</th>
                 @foreach (var soru in Sorular)
                 {
-                    <th>Soru @soru.SoruNumarasi</th>
+                    <th>Soru @soru.SoruNumarasi (@soru.Puan) Puan</th>
                 }
             </tr>
         </thead>
@@ -150,45 +149,38 @@ else
     private bool showStudentScores = false;
 
     private async Task Kaydet()
-{
-    try
     {
-        // DersId, SinavTurId ve SinavYuzdesi'yi sorulara ekle
-        foreach (var soru in Sorular)
+        try
         {
-            soru.DersId = seciliDers.CourseCode; // CourseCode, Lesson tablosundan alınıyor
-            soru.SinavTuruId = seciliSinavTur.SinavTurId; // SinavTurId, SinavTur tablosundan alınıyor
-            soru.SinavYuzdesi = sinavYuzdesi.HasValue ? sinavYuzdesi.Value : 0; // SinavYuzdesi kaydediliyor
+            foreach (var soru in Sorular)
+            {
+                soru.DersId = seciliDers.CourseCode;
+                soru.SinavTuruId = seciliSinavTur.SinavTurId;
+                soru.SinavYuzdesi = sinavYuzdesi.HasValue ? sinavYuzdesi.Value : 0;
 
-            // Sorulara ait olan öğrenim çıktılarının alınması
-            if (OgretimCiktilari.ContainsKey(soru.SoruNumarasi))
-            {
-                // O soruya ait öğrenim çıktıları alınıyor
-                soru.OgrenimCiktilari = OgretimCiktilari[soru.SoruNumarasi].SelectMany(kv => kv.Value).Distinct().ToList();
+                if (OgretimCiktilari.ContainsKey(soru.SoruNumarasi))
+                {
+                    soru.OgrenimCiktilari = OgretimCiktilari[soru.SoruNumarasi].SelectMany(kv => kv.Value).Distinct().ToList();
+                }
+                else
+                {
+                    soru.OgrenimCiktilari = new List<string>();
+                }
             }
-            else
-            {
-                // Öğrenim çıktısı yoksa boş bir liste atanır
-                soru.OgrenimCiktilari = new List<string>();
-            }
+
+            await soruService.SorulariKaydetAsync(Sorular);
+            Console.WriteLine("Sorular başarıyla kaydedildi!");
         }
-
-        await soruService.SorulariKaydetAsync(Sorular); // Veritabanına kaydet
-        Console.WriteLine("Sorular başarıyla kaydedildi!");
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Hata: {ex.Message}");
+        }
     }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"Hata: {ex.Message}");
-    }
-}
-
-
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            // Dersleri, sınav türlerini ve öğrencileri asenkron olarak yükle
             Dersler = await LessonService.GetLessons();
             ogrenciler = await StudentService.GetStudentsAsync();
             SinavTurleri = await SinavTurService.GetSinavTurleriAsync();
@@ -209,8 +201,8 @@ else
         if (e.Value != null)
         {
             seciliDers = await LessonService.GetLessonByCodeAsync(e.Value.ToString());
-            seciliSinavTur = null; // Sınav türünü sıfırlıyoruz
-            Sorular.Clear(); // Soruları sıfırlıyoruz
+            seciliSinavTur = null;
+            Sorular.Clear();
             StateHasChanged();
         }
     }
@@ -249,14 +241,9 @@ else
         }
     }
 
-    private void CheckTotalPuan()
-    {
-        // Toplam puan hesaplaması
-    }
-
     private async Task OnNextClick()
     {
-        showStudentScores = true; // Öğrenci notlarını göstermek için flag'yi true yapıyoruz.
+        showStudentScores = true;
     }
 
     private void OgrenimCiktisiSecildi(Soru soru, string ogrenimCiktisi, ChangeEventArgs e)

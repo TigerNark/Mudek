@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "heTO9bAGCzfOG050SzPW3EFJfzZhsWuFnubxUHqpm4E=",
+  "Hash": "L7mrDIuplWL9mngA9yrGFkEjD3RG0masxj5ztPDG8zs=",
   "Source": "MudekServer",
   "BasePath": "_content/MudekServer",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MudekServer\\wwwroot",
       "Source": "MudekServer",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
       "SourceId": "MudekServer",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "MudekServer#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "O7UufnKlLm+26m3pnNgLD7PuLdMX+JR3IH4Q7t6kQs4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css"
+      "OriginalItemSpec": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
       "SourceId": "MudekServer",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "MudekServer#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "O7UufnKlLm+26m3pnNgLD7PuLdMX+JR3IH4Q7t6kQs4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\amasya-üni-logo.png",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\amasya-üni-logo.png",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "amasya-üni-logo#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\amasya-üni-logo.png"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -94,17 +94,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bpk8xqwxhs",
-      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\exam-analysis.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\exam-analysis.css",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/exam-analysis#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\css\\exam-analysis.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Exam.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Exam.css",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/Exam#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Exam.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Lesson.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Lesson.css",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/Lesson#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Lesson.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\LessonDetails.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\LessonDetails.css",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/LessonDetails#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\css\\LessonDetails.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\login.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\login.css",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/login#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/FONT-LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.eot",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.otf",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.svg",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.ttf",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.woff",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/ICON-LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/open-iconic/README#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\site.css",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\favicon.png",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\icon-192.png",
+      "Identity": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\icon-192.png",
       "SourceId": "MudekServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\",
       "BasePath": "_content/MudekServer",
       "RelativePath": "icon-192#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -482,7 +482,7 @@
   "Endpoints": [
     {
       "Route": "amasya-üni-logo.png",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\amasya-üni-logo.png",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\amasya-üni-logo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -503,7 +503,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Oct 2024 14:24:01 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -519,7 +519,7 @@
     },
     {
       "Route": "amasya-üni-logo.tqjai0s21z.png",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\amasya-üni-logo.png",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\amasya-üni-logo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -540,7 +540,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 06 Oct 2024 14:24:01 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -563,8 +563,8 @@
       ]
     },
     {
-      "Route": "css/bootstrap/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -573,7 +573,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162720"
+          "Value": "162726"
         },
         {
           "Name": "Content-Type",
@@ -581,11 +581,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -595,7 +595,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bpk8xqwxhs"
+          "Value": "6gzpyzhau4"
         },
         {
           "Name": "label",
@@ -603,13 +603,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
         }
       ]
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -618,7 +618,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162720"
+          "Value": "162726"
         },
         {
           "Name": "Content-Type",
@@ -626,11 +626,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -640,13 +640,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
         }
       ]
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -667,7 +667,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -691,7 +691,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -712,7 +712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -728,7 +728,7 @@
     },
     {
       "Route": "css/exam-analysis.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\exam-analysis.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\exam-analysis.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -749,7 +749,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -765,7 +765,7 @@
     },
     {
       "Route": "css/exam-analysis.efslvgtyux.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\exam-analysis.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\exam-analysis.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -786,7 +786,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -810,7 +810,7 @@
     },
     {
       "Route": "css/Exam.0ynf6elbyq.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Exam.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Exam.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -831,7 +831,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -855,7 +855,7 @@
     },
     {
       "Route": "css/Exam.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Exam.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Exam.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -876,7 +876,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -892,7 +892,7 @@
     },
     {
       "Route": "css/Lesson.acx01h5m8o.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Lesson.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Lesson.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -913,7 +913,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -937,7 +937,7 @@
     },
     {
       "Route": "css/Lesson.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Lesson.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\Lesson.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -958,7 +958,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -974,7 +974,7 @@
     },
     {
       "Route": "css/LessonDetails.7x2l38d5p7.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\LessonDetails.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\LessonDetails.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -995,7 +995,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1019,7 +1019,7 @@
     },
     {
       "Route": "css/LessonDetails.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\LessonDetails.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\LessonDetails.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1040,7 +1040,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1056,7 +1056,7 @@
     },
     {
       "Route": "css/login.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\login.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1077,7 +1077,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1093,7 +1093,7 @@
     },
     {
       "Route": "css/login.y2y33u9c7i.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\login.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1114,7 +1114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1138,7 +1138,7 @@
     },
     {
       "Route": "css/open-iconic/FONT-LICENSE",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1159,7 +1159,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1175,7 +1175,7 @@
     },
     {
       "Route": "css/open-iconic/FONT-LICENSE.48tmkg660f",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1196,7 +1196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1220,7 +1220,7 @@
     },
     {
       "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.cmapd0fi15.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1241,7 +1241,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1265,7 +1265,7 @@
     },
     {
       "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1286,7 +1286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1302,7 +1302,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.0uw8dim9nl.eot",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1323,7 +1323,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1347,7 +1347,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.eot",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1368,7 +1368,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1384,7 +1384,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.h4d0pazwgy.woff",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1405,7 +1405,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1429,7 +1429,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.ll5grcv8wv.ttf",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1450,7 +1450,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1474,7 +1474,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.otf",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1495,7 +1495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1511,7 +1511,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.sjnzgf7e1h.svg",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1532,7 +1532,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1556,7 +1556,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.svg",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1577,7 +1577,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1593,7 +1593,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.ttf",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1614,7 +1614,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1630,7 +1630,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.wk8x8xm0ah.otf",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1651,7 +1651,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1675,7 +1675,7 @@
     },
     {
       "Route": "css/open-iconic/font/fonts/open-iconic.woff",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1696,7 +1696,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1712,7 +1712,7 @@
     },
     {
       "Route": "css/open-iconic/ICON-LICENSE",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1733,7 +1733,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1749,7 +1749,7 @@
     },
     {
       "Route": "css/open-iconic/ICON-LICENSE.4dwjve0o0b",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1770,7 +1770,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1794,7 +1794,7 @@
     },
     {
       "Route": "css/open-iconic/README.5bzwdl5l6x.md",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1815,7 +1815,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1839,7 +1839,7 @@
     },
     {
       "Route": "css/open-iconic/README.md",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\open-iconic\\README.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1860,7 +1860,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:18 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1876,7 +1876,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1897,7 +1897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1913,7 +1913,7 @@
     },
     {
       "Route": "css/site.zh9s866nx2.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1934,7 +1934,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1958,7 +1958,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\favicon.png",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1979,7 +1979,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2003,7 +2003,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\favicon.png",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2024,7 +2024,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 19:44:17 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2040,7 +2040,7 @@
     },
     {
       "Route": "icon-192.f9uvjujlxy.png",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\icon-192.png",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\icon-192.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2061,7 +2061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 29 Sep 2024 17:32:51 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2085,7 +2085,7 @@
     },
     {
       "Route": "icon-192.png",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\icon-192.png",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\wwwroot\\icon-192.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2106,7 +2106,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 29 Sep 2024 17:32:51 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2122,7 +2122,7 @@
     },
     {
       "Route": "MudekServer.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2143,7 +2143,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2159,7 +2159,7 @@
     },
     {
       "Route": "MudekServer.lgzlo3iegl.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MudekServer.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2180,7 +2180,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2204,7 +2204,7 @@
     },
     {
       "Route": "MudekServer.lgzlo3iegl.styles.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2225,7 +2225,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2249,7 +2249,7 @@
     },
     {
       "Route": "MudekServer.styles.css",
-      "AssetFile": "C:\\Users\\ÖMER OSMAN\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
+      "AssetFile": "C:\\Users\\MSI\\Documents\\GitHub\\Mudek\\MudekServer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\MudekServer.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2270,7 +2270,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 09:16:25 GMT"
+          "Value": "Tue, 24 Dec 2024 20:44:37 GMT"
         },
         {
           "Name": "Cache-Control",

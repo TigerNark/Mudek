@@ -1,5 +1,7 @@
-namespace MudekServer.Models{
+using System.ComponentModel.DataAnnotations.Schema;
 
+namespace MudekServer.Models{
+[Table("Students")] 
     public class Student
 {
     public int Id { get; set; }
